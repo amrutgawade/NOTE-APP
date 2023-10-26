@@ -13,14 +13,21 @@ function Login() {
     e.preventDefault();
     const { email, password } = data;
     try {
-      await axios.post("/", {
-        email,
-        password,
-      }).then(res=>{
-        localStorage.setItem("name",res.data.user.name);
-        toast.success("Login Successful..! Welcome");
-        navigate('/home', {state: res.data.user});
-      })
+      await axios
+        .post("/", {
+          email,
+          password,
+        })
+        .then((res) => {
+          if(res.data.error){
+            toast.error(res.data.error);
+          }else{
+            localStorage.setItem("name", res.data.user.name);
+            toast.success("Login Successful..! Welcome");
+            navigate("/home", { state: res.data.user });
+          }
+        });
+        
     } catch (error) {
       console.log(error);
     }

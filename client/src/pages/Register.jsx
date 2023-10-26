@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 
-
 function Register() {
   const navigate = useNavigate();
   const [data, setData] = useState({
@@ -25,7 +24,7 @@ function Register() {
       } else {
         // setData({});
         toast.success("Register Successful..! Welcome");
-        navigate('/');
+        navigate("/");
       }
     } catch (error) {
       console.log(error);
