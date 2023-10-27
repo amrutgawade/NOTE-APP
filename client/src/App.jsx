@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer";
 
 
 axios.defaults.baseURL = "http://localhost:8000";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -63,7 +63,7 @@ function Home() {
 
         <div className="row">
           <hr className="mb-5" />
-          <div className="col-3">
+          <div className="col-4">
             <form onSubmit={addNote}>
               <label htmlFor="noteTitle">Note Title:</label>
               <input

@@ -13,7 +13,7 @@ function Notes({ data, user }) {
   }
 
   return (
-    <div className="col-8 offset-1">
+    <div className="col-8">
       <table className="table table-hover">
         <thead>
           <tr>
