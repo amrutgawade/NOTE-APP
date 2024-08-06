@@ -8,7 +8,7 @@ function Footer() {
           <div className="d-flex align-items-center justify-content-between small">
             <div className="text-muted">
               Copyright © NOTE APP 2023. Designed and Developed by{" "}
-              <Link to="http://freakdevelopers.com" target="_Blank">
+              <Link to="http://freakdevs.in" target="_Blank">
                 FreakDevs
               </Link>
             </div>

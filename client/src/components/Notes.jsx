@@ -24,7 +24,7 @@ function Notes({ data, user }) {
           </tr>
         </thead>
         <tbody>
-          {data && data.map((item, index) => (
+          {data?.map((item, index) => (
             <tr key={index}>
               <th scope="row">{index + 1}</th>
               <td>{item.title}</td>

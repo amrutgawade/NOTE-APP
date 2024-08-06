@@ -8,8 +8,7 @@ import axios from "axios";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 
-
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 axios.defaults.withCredentials = true;
 
 function App() {

@@ -7,7 +7,7 @@ const app = express();
 
 //database connection
 mongoose.connect(process.env.MONGO_URL)
-    .then(() => console.log("Database Connected..!"))
+    .then((connectionInstance) => console.log(`\nMongoDB connected !! DB Host: ${connectionInstance.connection.host}`))
     .catch((err) => console.log("Database Not Connected..!", err))
 
 //middleware
